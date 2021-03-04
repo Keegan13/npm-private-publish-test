@@ -1,9 +1,17 @@
 {
-  "name": "ng-private-lib",
-  "version": "0.0.1",
+  "name": "@keegan13/ng-private-lib",
+  "version": "0.0.2",
   "peerDependencies": {
     "@angular/common": "^11.0.9",
     "@angular/core": "^11.0.9"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "ssh://git@github.com:Keegan13/npm-private-publish-test.git",
+    "directory": "@Keegan13/npm-private-publish-test"
   },
   "dependencies": {
     "tslib": "^2.0.0"

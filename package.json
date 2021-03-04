@@ -11,7 +11,12 @@
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/Keegan13"
   },
-  "private": true,
+  "private": false,
+  "repository": {
+    "type": "git",
+    "url": "ssh://git@github.com:Keegan13/npm-private-publish-test.git",
+    "directory": "@Keegan13/npm-private-publish-test"
+  },
   "dependencies": {
     "@angular/animations": "~11.0.4",
     "@angular/common": "~11.0.4",
