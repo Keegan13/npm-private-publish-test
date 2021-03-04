@@ -15,6 +15,8 @@ Email: any
 ## Сonsumption
 1. Add .npmrc file to ther root of project
 2. Edit .npmrc, add lines
+```npmrc
   @keegan13:registry=https://npm.pkg.github.com
   registry=https://registry.npmjs.org
+```
 3. npm install @keegan13/ng-private-lib
