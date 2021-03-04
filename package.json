@@ -1,12 +1,15 @@
 {
-  "name": "my-workspace",
-  "version": "0.0.0",
+  "name": "@keegan13/ng-private-lib",
+  "version": "0.0.1",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/Keegan13"
   },
   "private": true,
   "dependencies": {
