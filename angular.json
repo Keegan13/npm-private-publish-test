@@ -3,5 +3,46 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-  }
+    "ng-private-lib": {
+      "projectType": "library",
+      "root": "projects/ng-private-lib",
+      "sourceRoot": "projects/ng-private-lib/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:ng-packagr",
+          "options": {
+            "tsConfig": "projects/ng-private-lib/tsconfig.lib.json",
+            "project": "projects/ng-private-lib/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/ng-private-lib/tsconfig.lib.prod.json"
+            }
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/ng-private-lib/src/test.ts",
+            "tsConfig": "projects/ng-private-lib/tsconfig.spec.json",
+            "karmaConfig": "projects/ng-private-lib/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/ng-private-lib/tsconfig.lib.json",
+              "projects/ng-private-lib/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
+    }
+  },
+  "defaultProject": "ng-private-lib"
 }
